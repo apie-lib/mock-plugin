@@ -1,0 +1,34 @@
+{
+  "name": "apie/mock-plugin",
+  "description": "Composer package of the apie library: mock plugin",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pieter Jordaan",
+      "email": "pieter_jordaan@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Apie\\MockPlugin\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Apie\\Tests\\MockPlugin\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.3",
+    "apie/core": "dev-main",
+    "apie/object-access-normalizer": "dev-main",
+    "apie/application-info-plugin": "dev-main"
+  },
+  "require-dev": {
+    "apie/mock-objects": "dev-main",
+    "phpunit/phpunit": "^9.5"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
